@@ -4,6 +4,7 @@ import Header from './components/Header';
 import CategoryFilter from './components/CategoryFilter';
 import PlaceList from './components/PlaceList';
 import PlaceDetail from './components/PlaceDetail';
+import ErrorBoundary from './components/ErrorBoundary';
 import { baguioPlaces, categories } from './data/baguioPlaces';
 
 function App() {
@@ -37,28 +38,30 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Header />
-      <div className="container">
-        <CategoryFilter 
-          categories={categories}
-          selectedCategory={selectedCategory}
-          onCategoryChange={setSelectedCategory}
-        />
-        <PlaceList 
-          places={filteredPlaces}
-          onPlaceClick={handlePlaceClick}
-          onToggleVisited={handleToggleVisited}
-        />
+    <ErrorBoundary>
+      <div className="App">
+        <Header />
+        <div className="container">
+          <CategoryFilter 
+            categories={categories}
+            selectedCategory={selectedCategory}
+            onCategoryChange={setSelectedCategory}
+          />
+          <PlaceList 
+            places={filteredPlaces}
+            onPlaceClick={handlePlaceClick}
+            onToggleVisited={handleToggleVisited}
+          />
+        </div>
+        {showDetail && selectedPlace && (
+          <PlaceDetail 
+            place={selectedPlace}
+            onClose={handleCloseDetail}
+            onToggleVisited={handleToggleVisited}
+          />
+        )}
       </div>
-      {showDetail && selectedPlace && (
-        <PlaceDetail 
-          place={selectedPlace}
-          onClose={handleCloseDetail}
-          onToggleVisited={handleToggleVisited}
-        />
-      )}
-    </div>
+    </ErrorBoundary>
   );
 }
 
