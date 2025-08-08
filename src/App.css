@@ -21,21 +21,22 @@
   border-radius: 16px;
   padding: 16px;
   margin-bottom: 16px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(31, 89, 37, 0.08), 0 2px 8px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
   cursor: pointer;
-  border: 1px solid #e9ecef;
+  border: 1px solid rgba(31, 89, 37, 0.15);
   position: relative;
 }
 
 .place-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(31, 89, 37, 0.15), 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .place-card.visited {
   background: #f8fff8;
-  border-color: #28a745;
+  border-color: rgba(31, 89, 37, 0.4);
+  border-width: 2px;
 }
 
 .card-header {
@@ -115,20 +116,20 @@
   font-size: 0.85rem;
   font-weight: 500;
   color: #495057;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(31, 89, 37, 0.08), 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
 .category-button.active {
   background: #28a745;
   border-color: #28a745;
   color: white;
-  box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+  box-shadow: 0 4px 15px rgba(31, 89, 37, 0.25), 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .category-button:hover {
   border-color: #28a745;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(31, 89, 37, 0.15), 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Modal styles */
@@ -155,7 +156,7 @@
   max-height: 90vh;
   overflow-y: auto;
   position: relative;
-  box-shadow: 0 10px 40px rgba(34, 139, 34, 0.2);
+  box-shadow: 0 20px 60px rgba(31, 89, 37, 0.25), 0 8px 25px rgba(0, 0, 0, 0.15);
   border: 2px solid #c8e6c9;
 }
 
@@ -205,7 +206,7 @@
   padding: 16px;
   border-radius: 16px;
   border: 2px solid #c8e6c9;
-  box-shadow: 0 2px 8px rgba(34, 139, 34, 0.1);
+  box-shadow: 0 4px 15px rgba(31, 89, 37, 0.12), 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
 .info-item h4 {
@@ -231,7 +232,7 @@
   border-radius: 16px;
   padding: 20px;
   margin-top: 20px;
-  box-shadow: 0 4px 15px rgba(255, 204, 2, 0.2);
+  box-shadow: 0 6px 20px rgba(255, 204, 2, 0.25), 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 .tips-section h4 {
@@ -262,19 +263,19 @@
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(31, 89, 37, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
 .check-button.checked {
   background: #28a745;
   border-color: #28a745;
   color: white;
-  box-shadow: 0 2px 6px rgba(40, 167, 69, 0.3);
+  box-shadow: 0 4px 12px rgba(31, 89, 37, 0.3), 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 .check-button:hover {
   transform: scale(1.05);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(31, 89, 37, 0.15), 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 480px) {

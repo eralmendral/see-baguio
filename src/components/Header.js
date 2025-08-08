@@ -1,4 +1,5 @@
 import React from 'react';
+import ThemeToggle from './ThemeToggle';
 
 function Header() {
   return (
@@ -41,12 +42,13 @@ function Header() {
         <div style={{
           display: 'flex',
           alignItems: 'center',
-          gap: '8px',
+          gap: '12px',
           fontSize: '14px',
           opacity: 0.9
         }}>
           <span>🏔️</span>
           <span>City of Pines</span>
+          <ThemeToggle />
         </div>
       </div>
     </header>
