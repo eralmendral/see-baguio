@@ -1,10 +1,10 @@
 .App {
   min-height: 100vh;
-  background: linear-gradient(135deg, #f0f8f0 0%, #e8f5e8 100%);
+  background: #f8f9fa;
 }
 
 .container {
-  padding: 16px;
+  padding: 20px 16px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -18,41 +18,24 @@
 /* Place card styles */
 .place-card {
   background: white;
-  border-radius: 20px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 20px rgba(34, 139, 34, 0.1);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   cursor: pointer;
-  border: 2px solid transparent;
+  border: 1px solid #e9ecef;
   position: relative;
-  overflow: hidden;
-}
-
-.place-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, #228b22, #32cd32);
-  border-radius: 20px 20px 0 0;
 }
 
 .place-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 30px rgba(34, 139, 34, 0.2);
-  border-color: #228b22;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
 }
 
 .place-card.visited {
-  background: linear-gradient(135deg, #f0fff0 0%, #e8f8e8 100%);
-  border-color: #228b22;
-}
-
-.place-card.visited::before {
-  background: linear-gradient(90deg, #228b22, #32cd32);
+  background: #f8fff8;
+  border-color: #28a745;
 }
 
 .card-header {
@@ -63,77 +46,89 @@
 }
 
 .place-card h3 {
-  margin: 0 0 12px 0;
-  color: #2d5016;
-  font-size: 1.3rem;
+  margin: 0 0 8px 0;
+  color: #212529;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
 .place-card .category {
   display: inline-block;
-  background: linear-gradient(135deg, #228b22, #32cd32);
   color: white;
-  padding: 6px 12px;
-  border-radius: 20px;
-  font-size: 0.85rem;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
   font-weight: 500;
-  box-shadow: 0 2px 8px rgba(34, 139, 34, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.place-card .category[data-category="Tourist Spot"] {
+  background: #ff6b35;
+}
+
+.place-card .category[data-category="Cafe"] {
+  background: #6c5ce7;
+}
+
+.place-card .category[data-category="Restaurant"] {
+  background: #00b894;
 }
 
 .place-card .description {
-  color: #4a6741;
-  margin-bottom: 12px;
-  line-height: 1.5;
-  font-size: 0.95rem;
+  color: #6c757d;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-size: 0.9rem;
 }
 
 .place-card .location {
-  color: #6b8e23;
-  font-size: 0.9rem;
-  margin-bottom: 6px;
+  color: #495057;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
   font-weight: 500;
 }
 
 .place-card .distance {
-  color: #228b22;
+  color: #28a745;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 /* Category filter styles */
 .category-filter {
   display: flex;
-  gap: 12px;
-  margin-bottom: 32px;
+  gap: 10px;
+  margin-bottom: 24px;
   overflow-x: auto;
-  padding-bottom: 12px;
+  padding-bottom: 8px;
 }
 
 .category-button {
   background: white;
-  border: 2px solid #c8e6c9;
-  border-radius: 25px;
-  padding: 12px 20px;
+  border: 1px solid #dee2e6;
+  border-radius: 20px;
+  padding: 8px 16px;
   cursor: pointer;
   white-space: nowrap;
-  transition: all 0.3s ease;
-  font-size: 0.95rem;
+  transition: all 0.2s ease;
+  font-size: 0.85rem;
   font-weight: 500;
-  color: #2d5016;
-  box-shadow: 0 2px 8px rgba(34, 139, 34, 0.1);
+  color: #495057;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .category-button.active {
-  background: linear-gradient(135deg, #228b22, #32cd32);
-  border-color: #228b22;
+  background: #28a745;
+  border-color: #28a745;
   color: white;
-  box-shadow: 0 4px 15px rgba(34, 139, 34, 0.3);
+  box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
 }
 
 .category-button:hover {
-  border-color: #228b22;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(34, 139, 34, 0.2);
+  border-color: #28a745;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Modal styles */
@@ -256,30 +251,30 @@
 /* Check button styles */
 .check-button {
   background: white;
-  border: 2px solid #c8e6c9;
+  border: 1px solid #dee2e6;
   border-radius: 50%;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   cursor: pointer;
-  font-size: 16px;
-  color: #666;
+  font-size: 14px;
+  color: #6c757d;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(34, 139, 34, 0.1);
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .check-button.checked {
-  background: linear-gradient(135deg, #228b22, #32cd32);
-  border-color: #228b22;
+  background: #28a745;
+  border-color: #28a745;
   color: white;
-  box-shadow: 0 4px 15px rgba(34, 139, 34, 0.3);
+  box-shadow: 0 2px 6px rgba(40, 167, 69, 0.3);
 }
 
 .check-button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 15px rgba(34, 139, 34, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 480px) {

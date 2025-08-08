@@ -28,7 +28,7 @@ function PlaceList({ places, onPlaceClick, onToggleVisited }) {
           onClick={() => onPlaceClick(place)}
         >
           <div className="card-header">
-            <div className="category">
+            <div className="category" data-category={place.category}>
               {getCategoryIcon(place.category)} {place.category}
             </div>
             <button
