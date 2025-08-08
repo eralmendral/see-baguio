@@ -1,7 +1,8 @@
 {
-  "name": "baguio-itinerary",
+  "name": "see-baguio",
   "version": "1.0.0",
   "description": "A mobile-first web app for Baguio itinerary planning",
+  "homepage": ".",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",

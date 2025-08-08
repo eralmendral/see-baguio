@@ -35,7 +35,7 @@ function Header() {
             fontWeight: '600',
             letterSpacing: '0.5px'
           }}>
-            Baguio Itinerary
+            See Baguio
           </h1>
         </div>
         <div style={{
