@@ -10,10 +10,11 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedPlace, setSelectedPlace] = useState(null);
   const [showDetail, setShowDetail] = useState(false);
+  const [places, setPlaces] = useState(baguioPlaces);
 
   const filteredPlaces = selectedCategory === 'all' 
-    ? baguioPlaces 
-    : baguioPlaces.filter(place => place.category === selectedCategory);
+    ? places 
+    : places.filter(place => place.category === selectedCategory);
 
   const handlePlaceClick = (place) => {
     setSelectedPlace(place);
@@ -23,6 +24,16 @@ function App() {
   const handleCloseDetail = () => {
     setShowDetail(false);
     setSelectedPlace(null);
+  };
+
+  const handleToggleVisited = (placeId) => {
+    setPlaces(prevPlaces => 
+      prevPlaces.map(place => 
+        place.id === placeId 
+          ? { ...place, visited: !place.visited }
+          : place
+      )
+    );
   };
 
   return (
@@ -37,12 +48,14 @@ function App() {
         <PlaceList 
           places={filteredPlaces}
           onPlaceClick={handlePlaceClick}
+          onToggleVisited={handleToggleVisited}
         />
       </div>
       {showDetail && selectedPlace && (
         <PlaceDetail 
           place={selectedPlace}
           onClose={handleCloseDetail}
+          onToggleVisited={handleToggleVisited}
         />
       )}
     </div>

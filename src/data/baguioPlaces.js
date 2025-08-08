@@ -10,7 +10,9 @@ export const baguioPlaces = [
     estimatedTime: "1-2 hours",
     bestTime: "Morning to Evening",
     tips: "Great for people watching and shopping",
-    coordinates: { lat: 16.4023, lng: 120.5960 }
+    coordinates: { lat: 16.4023, lng: 120.5960 },
+    backgroundImage: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    visited: false
   },
   {
     id: 2,
@@ -22,7 +24,9 @@ export const baguioPlaces = [
     estimatedTime: "2-3 hours",
     bestTime: "Morning to Afternoon",
     tips: "Try the boat ride and visit the rose garden",
-    coordinates: { lat: 16.4023, lng: 120.5960 }
+    coordinates: { lat: 16.4023, lng: 120.5960 },
+    backgroundImage: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    visited: false
   },
   {
     id: 3,
@@ -34,7 +38,9 @@ export const baguioPlaces = [
     estimatedTime: "1 hour",
     bestTime: "Morning",
     tips: "Visit during mass times for the full experience",
-    coordinates: { lat: 16.4147, lng: 120.5960 }
+    coordinates: { lat: 16.4147, lng: 120.5960 },
+    backgroundImage: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    visited: false
   },
   {
     id: 4,
@@ -46,7 +52,9 @@ export const baguioPlaces = [
     estimatedTime: "1-2 hours",
     bestTime: "Early Morning or Sunset",
     tips: "Best views in the morning, try the strawberry taho",
-    coordinates: { lat: 16.4167, lng: 120.6167 }
+    coordinates: { lat: 16.4167, lng: 120.6167 },
+    backgroundImage: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    visited: false
   },
   {
     id: 5,
@@ -58,7 +66,9 @@ export const baguioPlaces = [
     estimatedTime: "1-2 hours",
     bestTime: "Morning to Afternoon",
     tips: "Negotiate horse riding prices, wear comfortable shoes",
-    coordinates: { lat: 16.4167, lng: 120.6167 }
+    coordinates: { lat: 16.4167, lng: 120.6167 },
+    backgroundImage: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    visited: false
   },
   {
     id: 6,
@@ -70,7 +80,9 @@ export const baguioPlaces = [
     estimatedTime: "30 minutes",
     bestTime: "Morning",
     tips: "Photo opportunities only from outside",
-    coordinates: { lat: 16.4167, lng: 120.6167 }
+    coordinates: { lat: 16.4167, lng: 120.6167 },
+    backgroundImage: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    visited: false
   },
   {
     id: 7,
@@ -82,7 +94,9 @@ export const baguioPlaces = [
     estimatedTime: "1-2 hours",
     bestTime: "Morning to Afternoon",
     tips: "Great for photos, learn about local culture",
-    coordinates: { lat: 16.4167, lng: 120.6000 }
+    coordinates: { lat: 16.4167, lng: 120.6000 },
+    backgroundImage: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    visited: false
   },
   {
     id: 8,
@@ -94,7 +108,9 @@ export const baguioPlaces = [
     estimatedTime: "2-3 hours",
     bestTime: "Morning to Afternoon",
     tips: "Visit the Tree Top Adventure, walk the trails",
-    coordinates: { lat: 16.4167, lng: 120.6167 }
+    coordinates: { lat: 16.4167, lng: 120.6167 },
+    backgroundImage: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    visited: false
   },
   {
     id: 9,
@@ -106,7 +122,9 @@ export const baguioPlaces = [
     estimatedTime: "30 minutes",
     bestTime: "Morning or Sunset",
     tips: "Best photos in the morning, watch for traffic",
-    coordinates: { lat: 16.4167, lng: 120.6167 }
+    coordinates: { lat: 16.4167, lng: 120.6167 },
+    backgroundImage: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    visited: false
   },
   {
     id: 10,
@@ -118,7 +136,9 @@ export const baguioPlaces = [
     estimatedTime: "1-2 hours",
     bestTime: "Morning",
     tips: "Best strawberry picking in December to May",
-    coordinates: { lat: 16.4667, lng: 120.5833 }
+    coordinates: { lat: 16.4667, lng: 120.5833 },
+    backgroundImage: "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    visited: false
   },
 
   // Cafes - Near tourist spots
@@ -132,7 +152,9 @@ export const baguioPlaces = [
     estimatedTime: "1-2 hours",
     bestTime: "Breakfast or Lunch",
     tips: "Try their famous hot chocolate and local dishes",
-    coordinates: { lat: 16.4023, lng: 120.5960 }
+    coordinates: { lat: 16.4023, lng: 120.5960 },
+    backgroundImage: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    visited: false
   },
   {
     id: 12,
@@ -144,7 +166,9 @@ export const baguioPlaces = [
     estimatedTime: "30 minutes",
     bestTime: "Any time",
     tips: "Try their Benguet coffee",
-    coordinates: { lat: 16.4023, lng: 120.5960 }
+    coordinates: { lat: 16.4023, lng: 120.5960 },
+    backgroundImage: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    visited: false
   },
   {
     id: 13,
@@ -156,7 +180,9 @@ export const baguioPlaces = [
     estimatedTime: "1-2 hours",
     bestTime: "Lunch or Dinner",
     tips: "Reservations recommended, great wine selection",
-    coordinates: { lat: 16.4023, lng: 120.5960 }
+    coordinates: { lat: 16.4023, lng: 120.5960 },
+    backgroundImage: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    visited: false
   },
   {
     id: 14,
@@ -168,7 +194,9 @@ export const baguioPlaces = [
     estimatedTime: "1-2 hours",
     bestTime: "Lunch or Afternoon",
     tips: "Beautiful garden setting, try their pasta",
-    coordinates: { lat: 16.4167, lng: 120.6167 }
+    coordinates: { lat: 16.4167, lng: 120.6167 },
+    backgroundImage: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    visited: false
   },
   {
     id: 15,
@@ -180,7 +208,9 @@ export const baguioPlaces = [
     estimatedTime: "1 hour",
     bestTime: "Morning or Afternoon",
     tips: "Famous for their traditional hot chocolate",
-    coordinates: { lat: 16.4167, lng: 120.6167 }
+    coordinates: { lat: 16.4167, lng: 120.6167 },
+    backgroundImage: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    visited: false
   },
 
   // Restaurants - Various locations
@@ -194,7 +224,9 @@ export const baguioPlaces = [
     estimatedTime: "1-2 hours",
     bestTime: "Lunch or Dinner",
     tips: "Order family size portions, very popular",
-    coordinates: { lat: 16.4023, lng: 120.5960 }
+    coordinates: { lat: 16.4023, lng: 120.5960 },
+    backgroundImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    visited: false
   },
   {
     id: 17,
@@ -206,7 +238,9 @@ export const baguioPlaces = [
     estimatedTime: "1-2 hours",
     bestTime: "Dinner",
     tips: "Try their famous ribs, casual atmosphere",
-    coordinates: { lat: 16.4023, lng: 120.5960 }
+    coordinates: { lat: 16.4023, lng: 120.5960 },
+    backgroundImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    visited: false
   },
   {
     id: 18,
@@ -218,7 +252,9 @@ export const baguioPlaces = [
     estimatedTime: "1 hour",
     bestTime: "Lunch or Dinner",
     tips: "Great milkshakes and burgers",
-    coordinates: { lat: 16.4023, lng: 120.5960 }
+    coordinates: { lat: 16.4023, lng: 120.5960 },
+    backgroundImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    visited: false
   },
   {
     id: 19,
@@ -230,7 +266,9 @@ export const baguioPlaces = [
     estimatedTime: "2 hours",
     bestTime: "Dinner",
     tips: "Upscale dining, reservations recommended",
-    coordinates: { lat: 16.4167, lng: 120.6167 }
+    coordinates: { lat: 16.4167, lng: 120.6167 },
+    backgroundImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    visited: false
   },
   {
     id: 20,
@@ -242,7 +280,9 @@ export const baguioPlaces = [
     estimatedTime: "2-3 hours",
     bestTime: "Dinner",
     tips: "Cultural experience with food and entertainment",
-    coordinates: { lat: 16.4167, lng: 120.6167 }
+    coordinates: { lat: 16.4167, lng: 120.6167 },
+    backgroundImage: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    visited: false
   }
 ];
 

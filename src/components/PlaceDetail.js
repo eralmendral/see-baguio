@@ -1,6 +1,6 @@
 import React from 'react';
 
-function PlaceDetail({ place, onClose }) {
+function PlaceDetail({ place, onClose, onToggleVisited }) {
   const getCategoryIcon = (category) => {
     switch (category) {
       case 'Tourist Spot':
@@ -22,16 +22,38 @@ function PlaceDetail({ place, onClose }) {
         </button>
         
         <div className="modal-header">
-          <div className="category" style={{
-            display: 'inline-block',
-            background: '#3498db',
-            color: 'white',
-            padding: '6px 12px',
-            borderRadius: '16px',
-            fontSize: '0.9rem',
-            marginBottom: '12px'
-          }}>
-            {getCategoryIcon(place.category)} {place.category}
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '12px' }}>
+            <div className="category" style={{
+              display: 'inline-block',
+              background: '#3498db',
+              color: 'white',
+              padding: '6px 12px',
+              borderRadius: '16px',
+              fontSize: '0.9rem'
+            }}>
+              {getCategoryIcon(place.category)} {place.category}
+            </div>
+            <button
+              className={`check-button ${place.visited ? 'checked' : ''}`}
+              onClick={() => onToggleVisited(place.id)}
+              title={place.visited ? 'Mark as not visited' : 'Mark as visited'}
+              style={{
+                background: place.visited ? '#27ae60' : 'white',
+                border: '2px solid #e0e0e0',
+                borderRadius: '50%',
+                width: '40px',
+                height: '40px',
+                cursor: 'pointer',
+                fontSize: '18px',
+                color: place.visited ? 'white' : '#666',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                transition: 'all 0.2s ease'
+              }}
+            >
+              {place.visited ? '✓' : '○'}
+            </button>
           </div>
           <h2 style={{
             margin: '0 0 8px 0',
