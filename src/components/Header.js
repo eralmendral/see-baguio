@@ -32,9 +32,10 @@ function Header() {
           </div>
           <h1 style={{
             margin: 0,
-            fontSize: '1.5rem',
-            fontWeight: '600',
-            letterSpacing: '0.5px'
+            fontSize: '1.6rem',
+            fontWeight: '500',
+            letterSpacing: '0.02em',
+            fontFamily: "'Poppins', sans-serif"
           }}>
             See Baguio
           </h1>
@@ -44,7 +45,10 @@ function Header() {
           alignItems: 'center',
           gap: '12px',
           fontSize: '14px',
-          opacity: 0.9
+          opacity: 0.9,
+          fontFamily: "'Inter', sans-serif",
+          fontWeight: '300',
+          letterSpacing: '0.01em'
         }}>
           <span>🏔️</span>
           <span>City of Pines</span>
